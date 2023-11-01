@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace PR_5 {
@@ -12,16 +13,39 @@ namespace PR_5 {
             if (i >= 0 && i < _students.Count)
                 _students.RemoveAt(i);
         }
-        
-        
+
+
         public void QuickSortByScore() {
             QuickSortByScore(_students, 0, _students.Count - 1);
+        }
+
+        public ListStudents findWinner() {
+            var winners = this;
+            winners.QuickSortByScore();
+            var newWinner = new ListStudents();
+            var currentRank = 0;
+            var currentScore = int.MinValue;
+            foreach (var student in winners) {
+                if (student.Score < currentScore)
+                    currentRank++;
+
+                if (currentRank < 3)
+                    newWinner.Add(student);
+                else if (currentRank == 3 && student.Score == currentScore)
+                    newWinner.Add(student);
+                else
+                    break;
+
+                currentScore = student.Score;
+            }
+
+            return newWinner;
         }
 
         public IEnumerator<Student> GetEnumerator() => _students.GetEnumerator();
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => GetEnumerator();
-        
+
         private void Swap(List<Student> students, int i, int j) {
             (students[i], students[j]) = (students[j], students[i]);
         }

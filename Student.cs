@@ -34,7 +34,14 @@ namespace PR_5 {
             }
         }
 
-        public Student(string fullName, int course, int group, int score) {
+        public Student() {
+            FullName = "Шевченко Денис";
+            Course = 2;
+            Group = 21;
+            Score = 70;
+        }
+
+    public Student(string fullName, int course, int group, int score) {
             FullName = fullName;
             Course = course;
             Group = group;

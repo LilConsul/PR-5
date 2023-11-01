@@ -11,21 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87c11485-9e43-43fa-a995-9e4a10c644c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/File.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ListStudents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PR-5.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PR-5.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Properties/Settings.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Properties/Settings.settings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Student.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PR-5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PR-5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListStudents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ListStudents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PR-5.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PR-5.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Student.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +27,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/06/646cdc84/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ListStudents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Denis/Documents/Unik/Proga/PR-5/Form1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Student.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -99,13 +92,14 @@
       <option name="presentableId" value="Default" />
       <updated>1698845146984</updated>
       <workItem from="1698845148107" duration="3398000" />
-      <workItem from="1698848601048" duration="3573000" />
+      <workItem from="1698848601048" duration="3815000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
