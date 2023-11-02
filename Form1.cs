@@ -5,6 +5,7 @@ namespace PR_5 {
     public partial class Form1 : Form {
         private ListStudents list = new ListStudents();
         private ListStudents winner = new ListStudents();
+        private ListStudents filtered = new ListStudents();
         private File file = new File("test.xml", "test.xml");
 
         public Form1() {
@@ -25,8 +26,22 @@ namespace PR_5 {
 
         private void Update_winner() {
             try {
+                additional_label.Text = "Виграли";
                 winner_list.Rows.Clear();
                 foreach (var student in winner) {
+                    winner_list.Rows.Add(student.FullName, student.Course, student.Group, student.Score);
+                }
+            }
+            catch (Exception exception) {
+                MessageBox.Show(exception.Message, "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
+        private void Update_filter() {
+            try {
+                additional_label.Text = "Фільтр";
+                winner_list.Rows.Clear();
+                foreach (var student in filtered) {
                     winner_list.Rows.Add(student.FullName, student.Course, student.Group, student.Score);
                 }
             }
@@ -60,6 +75,17 @@ namespace PR_5 {
             }
         }
 
+        private void delete_Click(object sender, EventArgs e) {
+            try {
+                var rm = Convert.ToString(name_del.Text);
+                list.Remove(rm);
+                Update_table();
+            }
+            catch (Exception exception) {
+                MessageBox.Show(exception.Message, "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void write_Click(object sender, EventArgs e) {
             try {
                 file.Write(ref list);
@@ -80,6 +106,17 @@ namespace PR_5 {
             }
         }
 
+        private void filter_Click(object sender, EventArgs e) {
+            try {
+                var cr = Convert.ToInt32(course_filter.Text);
+                filtered = list.filterByCourse(cr);
+                Update_filter();
+            }
+            catch (Exception exception) {
+                MessageBox.Show(exception.Message, "Помилка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
         private void winners_Click(object sender, EventArgs e) {
             winner = list.findWinner();
             Update_winner();

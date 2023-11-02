@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ListStudents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ListStudents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PR-5.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PR-5.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Student.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +24,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41914444499f4996a3e6af79cf6c1fdb574b98/06/646cdc84/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../File.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../ListStudents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Denis/Documents/Unik/Proga/PR-5/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Student.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Denis/Documents/Unik/Proga/PR-5/Form1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -92,8 +89,19 @@
       <option name="presentableId" value="Default" />
       <updated>1698845146984</updated>
       <workItem from="1698845148107" duration="3398000" />
-      <workItem from="1698848601048" duration="3815000" />
+      <workItem from="1698848601048" duration="4337000" />
+      <workItem from="1698908091156" duration="98000" />
+      <workItem from="1698908199492" duration="2542000" />
     </task>
+    <task id="LOCAL-00001" summary="Finish">
+      <option name="closed" value="true" />
+      <created>1698856403692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698856403692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +111,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish" />
   </component>
 </project>

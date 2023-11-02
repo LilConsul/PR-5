@@ -9,11 +9,20 @@ namespace PR_5 {
             _students.Add(student);
         }
 
-        public void Remove(int i) {
-            if (i >= 0 && i < _students.Count)
-                _students.RemoveAt(i);
-        }
+        public void Remove(string fullName) {
+            int indexToRemove = -1;
 
+            for (int i = 0; i < _students.Count; i++) {
+                if (_students[i].FullName == fullName) {
+                    indexToRemove = i;
+                    break;
+                }
+            }
+
+            if (indexToRemove >= 0) {
+                _students.RemoveAt(indexToRemove);
+            }
+        }
 
         public void QuickSortByScore() {
             QuickSortByScore(_students, 0, _students.Count - 1);
@@ -40,6 +49,16 @@ namespace PR_5 {
             }
 
             return newWinner;
+        }
+
+        public ListStudents filterByCourse(int Course) {
+            var filters = new ListStudents();
+            foreach (var st in _students) {
+                if(st.Course == Course)
+                    filters.Add(st);
+            }
+
+            return filters;
         }
 
         public IEnumerator<Student> GetEnumerator() => _students.GetEnumerator();

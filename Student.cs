@@ -41,7 +41,7 @@ namespace PR_5 {
             Score = 70;
         }
 
-    public Student(string fullName, int course, int group, int score) {
+        public Student(string fullName, int course, int group, int score) {
             FullName = fullName;
             Course = course;
             Group = group;

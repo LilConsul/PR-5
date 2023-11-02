@@ -42,7 +42,7 @@
       this.group_field = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.score_field = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.label5 = new System.Windows.Forms.Label();
-      this.label6 = new System.Windows.Forms.Label();
+      this.additional_label = new System.Windows.Forms.Label();
       this.read = new System.Windows.Forms.Button();
       this.write = new System.Windows.Forms.Button();
       this.sort_button = new System.Windows.Forms.Button();
@@ -52,6 +52,12 @@
       this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.label7 = new System.Windows.Forms.Label();
+      this.name_del = new System.Windows.Forms.TextBox();
+      this.delete_button = new System.Windows.Forms.Button();
+      this.label8 = new System.Windows.Forms.Label();
+      this.course_filter = new System.Windows.Forms.TextBox();
+      this.filter = new System.Windows.Forms.Button();
       ((System.ComponentModel.ISupportInitialize)(this.data_list)).BeginInit();
       ((System.ComponentModel.ISupportInitialize)(this.winner_list)).BeginInit();
       this.SuspendLayout();
@@ -140,7 +146,7 @@
       this.data_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
       this.data_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.data_list.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.name_field, this.course_field, this.group_field, this.score_field });
-      this.data_list.Location = new System.Drawing.Point(219, 56);
+      this.data_list.Location = new System.Drawing.Point(438, 56);
       this.data_list.Name = "data_list";
       this.data_list.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
       this.data_list.Size = new System.Drawing.Size(321, 325);
@@ -177,25 +183,25 @@
       // label5
       // 
       this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.label5.Location = new System.Drawing.Point(219, 23);
+      this.label5.Location = new System.Drawing.Point(438, 23);
       this.label5.Name = "label5";
       this.label5.Size = new System.Drawing.Size(161, 33);
       this.label5.TabIndex = 0;
       this.label5.Text = "Список";
       // 
-      // label6
+      // additional_label
       // 
-      this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.label6.Location = new System.Drawing.Point(561, 23);
-      this.label6.Name = "label6";
-      this.label6.Size = new System.Drawing.Size(161, 33);
-      this.label6.TabIndex = 0;
-      this.label6.Text = "Виграли";
+      this.additional_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.additional_label.Location = new System.Drawing.Point(780, 23);
+      this.additional_label.Name = "additional_label";
+      this.additional_label.Size = new System.Drawing.Size(161, 33);
+      this.additional_label.TabIndex = 0;
+      this.additional_label.Text = "Виграли";
       // 
       // read
       // 
       this.read.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.read.Location = new System.Drawing.Point(219, 409);
+      this.read.Location = new System.Drawing.Point(438, 409);
       this.read.Name = "read";
       this.read.Size = new System.Drawing.Size(181, 45);
       this.read.TabIndex = 2;
@@ -206,7 +212,7 @@
       // write
       // 
       this.write.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.write.Location = new System.Drawing.Point(406, 409);
+      this.write.Location = new System.Drawing.Point(625, 409);
       this.write.Name = "write";
       this.write.Size = new System.Drawing.Size(181, 45);
       this.write.TabIndex = 2;
@@ -228,7 +234,7 @@
       // winners
       // 
       this.winners.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-      this.winners.Location = new System.Drawing.Point(601, 409);
+      this.winners.Location = new System.Drawing.Point(820, 409);
       this.winners.Name = "winners";
       this.winners.Size = new System.Drawing.Size(242, 45);
       this.winners.TabIndex = 2;
@@ -241,7 +247,7 @@
       this.winner_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
       this.winner_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.winner_list.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.dataGridViewTextBoxColumn1, this.dataGridViewTextBoxColumn2, this.dataGridViewTextBoxColumn3, this.dataGridViewTextBoxColumn4 });
-      this.winner_list.Location = new System.Drawing.Point(561, 56);
+      this.winner_list.Location = new System.Drawing.Point(780, 56);
       this.winner_list.Name = "winner_list";
       this.winner_list.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
       this.winner_list.Size = new System.Drawing.Size(321, 325);
@@ -275,28 +281,90 @@
       this.dataGridViewTextBoxColumn4.ReadOnly = true;
       this.dataGridViewTextBoxColumn4.Width = 84;
       // 
+      // label7
+      // 
+      this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.label7.Location = new System.Drawing.Point(213, 68);
+      this.label7.Name = "label7";
+      this.label7.Size = new System.Drawing.Size(161, 33);
+      this.label7.TabIndex = 0;
+      this.label7.Text = "Повне ім\'я";
+      // 
+      // name_del
+      // 
+      this.name_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.name_del.Location = new System.Drawing.Point(216, 104);
+      this.name_del.Name = "name_del";
+      this.name_del.Size = new System.Drawing.Size(158, 31);
+      this.name_del.TabIndex = 1;
+      // 
+      // delete_button
+      // 
+      this.delete_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.delete_button.Location = new System.Drawing.Point(216, 151);
+      this.delete_button.Name = "delete_button";
+      this.delete_button.Size = new System.Drawing.Size(158, 45);
+      this.delete_button.TabIndex = 2;
+      this.delete_button.Text = "Видалити";
+      this.delete_button.UseVisualStyleBackColor = true;
+      this.delete_button.Click += new System.EventHandler(this.delete_Click);
+      // 
+      // label8
+      // 
+      this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.label8.Location = new System.Drawing.Point(213, 244);
+      this.label8.Name = "label8";
+      this.label8.Size = new System.Drawing.Size(161, 33);
+      this.label8.TabIndex = 0;
+      this.label8.Text = "Курс";
+      // 
+      // course_filter
+      // 
+      this.course_filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.course_filter.Location = new System.Drawing.Point(216, 280);
+      this.course_filter.Name = "course_filter";
+      this.course_filter.Size = new System.Drawing.Size(158, 31);
+      this.course_filter.TabIndex = 1;
+      // 
+      // filter
+      // 
+      this.filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.filter.Location = new System.Drawing.Point(216, 317);
+      this.filter.Name = "filter";
+      this.filter.Size = new System.Drawing.Size(158, 45);
+      this.filter.TabIndex = 2;
+      this.filter.Text = "Фільтрувати";
+      this.filter.UseVisualStyleBackColor = true;
+      this.filter.Click += new System.EventHandler(this.filter_Click);
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.Control;
-      this.ClientSize = new System.Drawing.Size(879, 466);
+      this.ClientSize = new System.Drawing.Size(1091, 469);
       this.Controls.Add(this.winner_list);
       this.Controls.Add(this.data_list);
       this.Controls.Add(this.winners);
       this.Controls.Add(this.sort_button);
       this.Controls.Add(this.write);
       this.Controls.Add(this.read);
+      this.Controls.Add(this.filter);
+      this.Controls.Add(this.delete_button);
       this.Controls.Add(this.add_button);
       this.Controls.Add(this.score_box);
       this.Controls.Add(this.group_box);
+      this.Controls.Add(this.course_filter);
       this.Controls.Add(this.course_box);
+      this.Controls.Add(this.name_del);
       this.Controls.Add(this.name_box);
       this.Controls.Add(this.label4);
       this.Controls.Add(this.label3);
-      this.Controls.Add(this.label6);
+      this.Controls.Add(this.additional_label);
+      this.Controls.Add(this.label8);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.label5);
+      this.Controls.Add(this.label7);
       this.Controls.Add(this.label1);
       this.Location = new System.Drawing.Point(15, 15);
       this.Name = "Form1";
@@ -305,6 +373,13 @@
       this.ResumeLayout(false);
       this.PerformLayout();
     }
+
+    private System.Windows.Forms.Label label7;
+    private System.Windows.Forms.TextBox name_del;
+    private System.Windows.Forms.Button delete_button;
+    private System.Windows.Forms.Label label8;
+    private System.Windows.Forms.TextBox course_filter;
+    private System.Windows.Forms.Button filter;
 
     private System.Windows.Forms.DataGridView winner_list;
     private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -325,7 +400,7 @@
     private System.Windows.Forms.Button write;
 
     private System.Windows.Forms.Label label5;
-    private System.Windows.Forms.Label label6;
+    private System.Windows.Forms.Label additional_label;
 
     private System.Windows.Forms.DataGridView data_list;
 
